@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <!-- Font Awesome CDN -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+   </head>
+   <body>
+
+   <!-- Main Container -->
+   <div id="container">
+    <nav><img id="logo" src="img/logo.svg"></nav>
+   	<div id="content">
+
+      <!-- Left Side -->
+   		<div id="left">
+   			<div id="step1" class="active">
+   				<span id="s1" class="active">Step 1</span><br>
+   				<span class="bottom-step">Transaction <br id="hide-me">info</span>
+   			</div>
+   			<div id="step2">
+   				<span id="s2">Step 2</span><br>
+   				<span class="bottom-step">Receipt <br id="hide-me">info</span>
+   			</div>
+   			<div id="step3">
+   				<span id="s3">Step 3</span><br>
+   				<span class="bottom-step">Make <br id="hide-me">payment</span>
+   			</div>
+
+   			<h4 id="transaction">
+   				Lets set up your transaction!
+   			</h4><br>
+   			<h6 id="amount">
+   				Specify the amount to be sent or received.
+   			</h6>
+   			<div id="amount">
+   				<span id="send">You Send</span><br>
+   				<span id="figures">
+   					<h4 id="big-figures">
+   						€2,000.
+   					</h4>
+   					<h6 id="small-figures">
+   						00
+   					</h6>
+   					<span id="eur-holder"> <img id="gbp" src="img/eu.png"><span id="eur-text"> EUR</span>
+   				</span>
+   			</div>
+
+   			<div id="receive">
+   				<span id="receive">You Receive</span><br>
+   				<span id="figures">
+   					<h4 id="big-figures">
+   						£1,717.
+   					</h4>
+   					<h6 id="small-figures">
+   						00
+   					</h6>
+   					<span id="gbp-holder"> <img id="gbp" src="img/gbp.png"><span id="gbp-text"> GBP</span></span>
+   				</span>
+   			</div>
+
+   			<div id="button-container">
+   				<button id="button">
+   					Next
+   				</button>
+          
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div id="modal-box" class="modal-content">
+              <span class="close">&times;</span>
+              <div id="modal-header">
+                <span id="identity"><i class="fa fa-lock" aria-hidden="true"></i> Identity verification required</span><br>
+                <p id="id-para">For your security, we ocassionally require you to verify your identity by
+                entering a code sent to your mobile device.</p>
+              </div>
+              <hr id="line">
+              <div id="modal-main">
+                <p id="code">Enter the code sent via SMS to <span id="ph-number">+353</span><span id="ph-number-2"> 872251177</span></p>
+                <input autofocus type="text" name="textfield" class="code active">
+                <input type="text" name="textfield" class="code">
+                <input type="text" name="textfield" class="code">
+                <input type="text" name="textfield" class="code">
+                <input type="text" name="textfield" class="code">
+                <input type="text" name="textfield" class="code"><br>
+                <div id="code-holder">  
+                  <span id="new-code"><i class="fa fa-refresh" aria-hidden="true"></i>  Receive a new code</span>
+                  <span id="call-code"><i class="fa fa-phone" aria-hidden="true"></i>  Receive code via call instead</span>
+                </div>
+              </div>
+              <hr id="line">
+              <div id="modal-footer">
+              <button id="verify">Verify Identity</button>
+              <button id="back">Back</button>
+              <span id="no-access">I can't access this mobile device</span>
+                
+              </div>
+            </div>
+
+          </div>
+   			</div>
+   			<hr>
+   			<div id="legal">© 2016 CurrencyFair <span id="helpsupport">Help & Support</span><span id="helpsupport">Legal Stuff</span></div>
+   		</div>
+
+      <!-- Right Side -->
+   		<div id="right">
+   			<div id="right-table">
+          <div id="details">Sending Details</div>  
+          <div id="send"><span class="left-send">You send </span><span id="right-items">€2000.00</span></div>  
+          <div id="details">Receiving Details <span id="now">As of right now <i class="fa fa-question-circle" aria-hidden="true"></i></span></div> 
+          <div id="send" class="send-box">
+            <span class="left-items">Rate</span><span class="right-items">0.86022</span><br>
+            <span class="left-items">Fee</span><span class="right-items">£2.50</span><br>
+            <span class="left-items">Delivery Date</span><span class="right-items">25th November</span><br>
+            <span class="left-items">Receipt gets</span><span id="special" class="right-items">£1717.94</span><br>
+            <hr id="line">
+            <div id="save">You save £66.19 compared to your bank!</div>
+          </div>   
+        </div>
+   		</div>
+
+   	</div>
+   </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/modal.js"></script>
+  </body>
+</html>
